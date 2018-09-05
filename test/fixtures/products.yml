@@ -4,7 +4,7 @@ one:
   title: MyString
   description: MyText
   image_url: sandal.jpg
-  price: 9.99
+  price: 9.0
 
 two:
   title: MyString
