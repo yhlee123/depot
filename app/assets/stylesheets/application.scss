@@ -1,4 +1,3 @@
-
 /*
  * This is a manifest file that'll be compiled into application.css, which will
  * include all the files listed below.
@@ -32,6 +31,17 @@ header.main {
     display: none;
   }
 }
+
+.notice, #notice {
+  background: #ffb;
+  border-radius: 0.5em;
+  border: solid 0.177em #882;
+  color: #882;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding: 1em 1.414em;
+  text-align: center;
+}
 .content {
   margin: 0;
   padding: 0;
@@ -55,6 +65,21 @@ header.main {
       text-align: left; // desktop nav is left-aligned
       padding: 1em;     // and needs more padding
     }
+
+    #cart {
+      article {
+        h2 {
+          margin-top: 0;
+        }
+        background: white;
+        border-radius: 0.5em;
+        margin: 1em;
+        padding: 1.414em;
+        @media (min-width: 30em) {
+          margin: 0; // desktop doesn't need this margin
+        }
+      }
+    }
     ul {
       list-style: none;
       margin: 0;
@@ -73,7 +98,7 @@ header.main {
         }
         a:hover {
           background: none;
-          color: grey;
+          color: white;
         }
       }
     }
